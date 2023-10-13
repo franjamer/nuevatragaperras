@@ -32,7 +32,63 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.seccionCabecera {
+  background-color: #61dafb;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+
+}
+
+.seccionSlots {
+  background-color: rgb(245, 161, 51);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: auto;
+}
+
+.slot {
+  background-color: rgb(235, 235, 79);
+  width: 300px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 5%;
+  padding-bottom: 10px;
+  /* justify-items: start; */
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  background-color: brown;
+  border-radius: 5%;
+}
+
+.slide {
+  max-width: 100%;
+  height: auto;
+  opacity: 0;
+  transition: opacity 0.5s ease ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+
+}
+
+.js-parar {
+  background-color: #61dafb;
+
 }
