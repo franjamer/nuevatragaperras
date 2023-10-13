@@ -1,8 +1,8 @@
 // import React, { useState } from "react"
 import { useRef, useCallback } from "react";
 export default function Contadores({ props }) {
-  let tiempo = props.tiempo
-  console.log(tiempo)
+  // let tiempo = props.tiempo
+  // console.log(tiempo)
   const timeoutIdRef = useRef(null);
   const intervalIdRef = useRef(null);
   const contadorRef = useRef('');
@@ -56,11 +56,12 @@ export default function Contadores({ props }) {
       <h1>SetTimeout</h1>
       <button   
               className="js-alertar" 
-              tiempo={tiempo} 
+              // tiempo={tiempo}
+
               onClick={iniciarTimeout}>
         Alertar
       </button>
-      <button className="js-cancelar-alerta" cancelador={cancelador} onClick={cancelarTimeout}>
+      <button className="js-cancelar-alerta"onClick={cancelarTimeout}>
         Cancelar Alerta
       </button>
 
