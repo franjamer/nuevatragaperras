@@ -1,14 +1,17 @@
 // import React, { useState } from "react";
 // import imagenes from "./assets/img/imagenes";
 import Contadores from "./Contadores.jsx";
-import SliderVertical from "./SliderVertical";
+import SliderVertical from './SliderVertical.jsx';
 export default function Slot({ imagenes }) {
-    
+
 
     return (
         <>
-            <Contadores className='slot'/>
-            {/* Parte de slider */}
+            <Contadores
+                className='slot'
+                valor={'Este valor es una string'}
+            />
+
             <SliderVertical className='slot' />
         </>
     );
