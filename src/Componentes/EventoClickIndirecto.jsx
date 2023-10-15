@@ -1,5 +1,5 @@
 import React from 'react';
-import { funcionExportada } from './ContadorAutomatico';
+import { funcionExportada } from '../Componentes/ContadorAutomatico';
 export function activarEventoOnClickEnComponenteA() {
   console.log("Evento onClick activado en Componente A");
   // Realiza cualquier acción que desees aquí

@@ -1,6 +1,6 @@
 import React from 'react'
-import ContadorAutomatico from './ContadorAutomatico';
-import ContadorManual from './ContadorManual';
+import ContadorAutomatico from '../Componentes/ContadorAutomatico';
+import ContadorManual from '../Componentes/ContadorManual';
 //Comienzo de funcion principal de este componente.
 /* Este componente importa dos componentes hijos, uno de incremento y decremento manual
 y otro de inicio manual y parada automática.*/

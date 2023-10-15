@@ -1,7 +1,7 @@
 // import React, { useState } from "react"
 import { useRef, useCallback, useState } from "react";
-import ContadorSencillo from "./ContadorSencillo";
-import { ShareDataContext } from "./SliderVertical";
+import ContadorSencillo from "../Componentes/ContadorSencillo";
+import { ShareDataContext } from "../Componentes/SliderVertical";
 /*En este componente la unica lógica que hay es para hacer funcionar un settimeout. Tambien se ha importado un componente y un
 contexto común de datos,...un hook que hace un entorno común para compartir variables, propiedades,...etc. Además tambien hay 
 un ensayo de utilización de props.*/
