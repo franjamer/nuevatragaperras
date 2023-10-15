@@ -12,51 +12,61 @@ import piensaConCabeza from './piensaConCabeza.jpg'
  const imagenes=[
     {   id:1,
         nombre:'cromocr7',
-        src:cromocr7
+        src:cromocr7,
+        valor:0.1
     },
     {
         id:2,
         nombre:'cromocr7port',
         src:cromocr7port,
+        valor:0.2
     },
     {
         id:3,
         nombre:'jQuery',
         src:jQuery,
+        valor:0.5
     },
     {
         id:4,
         nombre:'logocyc',
-        src:logocyc
+        src:logocyc,
+        valor:1
     },
     {   id:5,
         nombre:'canal historia',
-        src:canalHistoria
+        src:canalHistoria,
+        valor:2
     },
     {
         id:6,
         nombre:'niña Piromana',
         src:niñaPiromana,
+        valor:5
     },
     {
         id:7,
         nombre:'Fry Futurama',
         src:Futurama,
+        valor:10
     },
     {
         id:8,
         nombre:'Morpheus',
-        src:Morpheus
+        src:Morpheus,
+        valor:20
     },
     {
         id:9,
         nombre:'Velociraptor Pensador',
         src:philosoraptor,
+        valor:50
     },
     {
         id:10,
         nombre:'Piensa con Cabeza',
-        src:piensaConCabeza
+        src:piensaConCabeza,
+        valor:100
     }
 ]
 export default imagenes
