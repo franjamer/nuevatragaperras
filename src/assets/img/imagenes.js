@@ -58,11 +58,6 @@ import piensaConCabeza from './piensaConCabeza.jpg'
         nombre:'Piensa con Cabeza',
         src:piensaConCabeza
     }
-
-
-
-
-
-
 ]
- export default imagenes
+export default imagenes
+

@@ -1,22 +1,20 @@
-// import logo from './logo.svg';
 import React from 'react';
-// import { ReactDOM } from 'react-dom/client';
 import './App.css';
 import Slot from './Slot';
 import imagenes from './assets/img/imagenes';
-
-function App() {
-
- 
-  return (
-    <div className="App">
+//Comienza la funcion principal de entrada a la aplicación
+function App() { 
+  return (  
+    <> 
+      <div className="App">
       <header >
         <h1>
           Juego de Tragaperras
         </h1>
         <section className='seccionCabecera'>
           <span>
-            Bote 
+            <label id='Apuesta' >Cantidad Apostada</label>
+            <input type='text' readOnly />
           </span>
           <span>
             Cantidad Apostada
@@ -28,23 +26,17 @@ function App() {
       </header>
       <section className='seccionSlots'>
         <Slot className='slot' imagenes={imagenes}/>
-        {/* <Slot className='slot' imagenes ={imagenes}/> */}
-      
-        
-        {/* <p className='slot'>
-          SLOT 2 
-          <button>
-            lanzar 2
-          </button>
-        </p>
-        <p className='slot'>
-          SLOT 3 
-          <button>
-            lanzar 3
-          </button>
-        </p> */}
+       
+       
       </section>
+      <section id='controlesPrincipales' className='seccionSlots'>
+    Seccion DONDE VAN LOS CONTROLES PRINCIPALES
+    <br/>
+   
+      </section>
+
     </div>
+    </>    
   );
 }
 

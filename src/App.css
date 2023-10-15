@@ -13,6 +13,15 @@
   }
 }
 
+/* body {
+  width: 100%;
+  height: auto;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+} */
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -53,25 +62,28 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: auto;
+  height: 100%;
+  width: 100%;
 }
 
 .slot {
   background-color: rgb(235, 235, 79);
-  width: 300px;
-  height: auto;
+  /* width: auto; */
+  max-width: max-content;
+  /* height:110; */
+  max-height: max-content;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   border-radius: 5%;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
   /* justify-items: start; */
 }
 
 img {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   background-color: brown;
   border-radius: 5%;
 }
@@ -92,6 +104,7 @@ img {
   background-color: #61dafb;
 
 }
-label{
+
+label {
   background-color: aqua;
 }
