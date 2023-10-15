@@ -1,5 +1,5 @@
 // import React, { useState } from "react"
-import { useRef, useCallback, useState } from "react";
+import { useRef, useCallback } from "react";
 import ContadorSencillo from "../Componentes/ContadorSencillo";
 import { ShareDataContext } from "../Componentes/SliderVertical";
 /*En este componente la unica lógica que hay es para hacer funcionar un settimeout. Tambien se ha importado un componente y un
@@ -9,7 +9,7 @@ un ensayo de utilización de props.*/
 export default function Contadores({ tamaño = '18px', color = 'white', colortexto = 'black', texto = 'por defecto', contadorAleatorio }) {
   const timeoutIdRef = useRef(null);
   const intervalIdRef = useRef(null);
-  const [data, setData] = useState(null);
+  // const [data, setData] = useState(null);
   //Dando valores a las props
   tamaño = '10px'
   color = 'brown'
@@ -51,7 +51,7 @@ export default function Contadores({ tamaño = '18px', color = 'white', colortex
         Mover Slider
       </button>
       <hr />
-      <ShareDataContext.Provider value={{ data, setData }}>
+      <ShareDataContext.Provider >
         <ContadorSencillo />
       </ShareDataContext.Provider>
     </div>

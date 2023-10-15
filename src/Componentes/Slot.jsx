@@ -2,12 +2,13 @@
 // import imagenes from "./assets/img/imagenes";
 // import Contadores from "./Contadores.jsx";
 // import { useContext } from 'react';
-import { ShareDataContext } from '../Componentes/SliderVertical';
+// import { ShareDataContext } from '../Componentes/SliderVertical';
 import SliderVertical from '../Componentes/SliderVertical';
 export default function Slot({ imagenes }) {
     // const {valorImg, setValorImg}=useContext(ShareDataContext)
     return (
-        <ShareDataContext.Provider>
+        <>
+        {/* // <ShareDataContext.Provider> */}
             {/* <Contadores
                 className='slot'
                 valor={'Este valor es una string'}
@@ -16,6 +17,8 @@ export default function Slot({ imagenes }) {
             <SliderVertical className='slot' />
             <SliderVertical className='Slot' />
             <SliderVertical className='Slot' />
-        </ShareDataContext.Provider>
+            {/* // </ShareDataContext.Provider> */}
+       </> 
+       
     );
 }
