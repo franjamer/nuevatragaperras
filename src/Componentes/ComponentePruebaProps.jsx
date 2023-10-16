@@ -12,9 +12,9 @@ const valorMensajeEscrito=(e)=>{
   setMensajeEscrito(e.target.value)
 }
 
-const handleChange = ( )=> {
-  setMensajeEscrito(valorMensajeEscrito)
-}
+// const handleChange = ( )=> {
+//   setMensajeEscrito(valorMensajeEscrito)
+// }
 return (
     <div>
       <h2>Componente Hijo</h2>

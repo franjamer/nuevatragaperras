@@ -10,28 +10,10 @@ export const ShareDataContext = createContext()
 function SliderVertical() {
 
     // Variables y Estados
-    const [imagenActual, setImagenActual] = useState(0);
+    // const [imagenActual, setImagenActual] = useState(0);
     const cantidad = imagenes?.length;
     const [data, setData] = useState(null)
-    // const handleChange=()=>{
-    //     setData( data+1)
-    // }
-    // Devuelve preventivo para evitar errores
-    if (!Array.isArray(imagenes) || cantidad === 0) {
-        return null;
-    }
 
-    const siguienteImagen = () => {
-        setImagenActual((prevImagenActual) =>
-            prevImagenActual === cantidad - 1 ? 0 : prevImagenActual + 1
-        );
-    };
-
-    const anteriorImagen = () => {
-        setImagenActual((prevImagenActual) =>
-            prevImagenActual === 0 ? cantidad - 2 : prevImagenActual - 1
-        );
-    };
 
     const contadorAleatorio = () => {
         let numAleato = Math.floor(Math.random() * 100)
@@ -47,14 +29,14 @@ function SliderVertical() {
     return (
         <ShareDataContext.Provider value={{ data, setData }}>
             <div className="slot">
-                <button onClick={anteriorImagen}>Anterior</button>
+                {/* <button onClick={anteriorImagen}>Anterior</button> */}
                 <div key={nuevoIndice()}>
                     {<img src={imagenes[nuevoIndice()].src} alt={imagenes[nuevoIndice()].nombre} />}
 
                 </div>
                 <p>{imagenes[nuevoIndice()].nombre}</p>
-                <button onClick={siguienteImagen}>Siguiente</button>
-
+                {/* <button onClick={siguienteImagen}>Siguiente</button> */}
+                {/* <button onClick={mostradorImagenes}>Mostrador de Imagenes</button> */}
                 <ContadorAutomatico />
 
             </div>
