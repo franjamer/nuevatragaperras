@@ -12,13 +12,13 @@ import piensaConCabeza from './piensaConCabeza.jpg'
 const imagenes = [
     {
         id: 1,
-        nombre: 'cromocr7',
+        nombre: 'Cromo 1 CR7',
         src: cromocr7,
         valor: 0.1
     },
     {
         id: 2,
-        nombre: 'cromocr7port',
+        nombre: 'Cromo 2 CR7',
         src: cromocr7port,
         valor: 0.2
     },
