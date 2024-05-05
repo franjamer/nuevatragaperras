@@ -11,7 +11,7 @@ function SliderVertical() {
 
     // Variables y Estados
     // const [imagenActual, setImagenActual] = useState(0);
-    const cantidad = imagenes?.length;
+    // const cantidad = imagenes?.length;
     const [data, setData] = useState(null)
 
 

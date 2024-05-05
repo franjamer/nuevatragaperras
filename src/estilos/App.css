@@ -64,6 +64,7 @@
   align-items: center;
   height: 100%;
   width: 100%;
+
 }
 
 .slot {
@@ -77,6 +78,7 @@
   justify-content: space-around;
   align-items: center;
   border-radius: 5%;
+  padding-top: 25px;
   padding-bottom: 5px;
   /* justify-items: start; */
 }
