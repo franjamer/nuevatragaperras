@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import imagenes from '../assets/img/imagenes'
+// import imagenes from '../assets/img/imagenes'
+import Imagenes from './Imagenes';
 //funcion principal para mostrar las imágenes del componente carrusel
 function ImagenesCarrusel() {
     //hooks creados para manejo del componente carrusel
@@ -12,8 +13,8 @@ function ImagenesCarrusel() {
     useEffect(() => {
         if (isBarridoActive) {
             const barridoInterval = setInterval(() => {
-                if (currentImageIndex < imagenes.length) {
-                    setDisplayedImage(imagenes[currentImageIndex]);
+                if (currentImageIndex < Imagenes.length) {
+                    setDisplayedImage(Imagenes[currentImageIndex]);
                     setCurrentImageIndex(currentImageIndex + 1);
                 } else {
                     setIsBarridoActive(false);
@@ -42,7 +43,7 @@ function ImagenesCarrusel() {
                 <button onClick={handleBarridoClick} disabled={isBarridoActive}>
                     Iniciar Barrido
                 </button>
-                <button onClick={handleSumarValor} disabled={!isBarridoActive || currentImageIndex !== imagenes.length}>
+                <button onClick={handleSumarValor} disabled={!isBarridoActive || currentImageIndex !== Imagenes.length}>
                     Sumar Valor de Última Imagen
                 </button>
             </div>

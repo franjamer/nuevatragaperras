@@ -88,8 +88,20 @@ img {
   height: 150px;
   background-color: brown;
   border-radius: 5%;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  /* border: 2px; */
 }
-
+button{
+  display:flex;
+  justify-content: center;
+  width: 150px;
+}
+p{
+  display:flex;
+  justify-content: center;
+}
 .slide {
   max-width: 100%;
   height: auto;
@@ -109,4 +121,10 @@ img {
 
 label {
   background-color: aqua;
+}
+.botonera, .contadores{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

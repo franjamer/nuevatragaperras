@@ -1,3 +1,8 @@
+
+/*******************************************************************
+Componente Solo como ejemplo para operar componentes Padres e Hijos.
+ACTUALMENTE FUERA DE USO
+********************************************************************/
 import React from 'react'
 
 function Saludo(props) {
