@@ -19,14 +19,7 @@ function App() {
   // const handleImagenMostrada = () =>{
   //   setValorImagen(imagenes[0].valor)
   // }
-  //Función para recibir el mensaje del componente hijo y actualizar el estado
 
-  const handleMensajeDeHijo = (mensaje) => {
-    setMensaje(mensaje)
-  }
-  const recibeDatoDeHijo = (datodesdeHijo) => {
-    setdatodesdeHijo(datodesdeHijo)
-  }
   return (
     // <ShareDataContext.Provider >
     <div className="App">
