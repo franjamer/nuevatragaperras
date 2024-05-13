@@ -1,3 +1,11 @@
+/* ***************************************
+* Componente de tres botones para sumar, 
+* restar y poner a cero de forma manual.
+* FUNCIONA CORRECTAMENTE.
+* De monmento FUERA DE USO.
+******************************************/
+
+
 import { React, useState } from "react";
 const Contador = () => {
     const [contador, setContador] = useState(0)

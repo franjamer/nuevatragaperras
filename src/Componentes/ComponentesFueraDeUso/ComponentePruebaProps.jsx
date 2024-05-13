@@ -1,5 +1,6 @@
 /*
 Componente cuya función es comunicar componente padre con hijo.
+FUERA DE USO
 */
 
 import React, { useState } from 'react'

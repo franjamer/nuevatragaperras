@@ -1,4 +1,7 @@
-// import { useState } from "react";
+/* **************************************
+*Componente Con un Boton, que realiza un
+* contador sencillo de Clicks
+*****************************************/
 
 export default function Button({ contador, onClick }) {
 

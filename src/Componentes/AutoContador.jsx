@@ -5,6 +5,7 @@
 
 import { useState, useEffect, useRef } from 'react';
 import imagenes from './Imagenes'
+import IndiceImagen from './CorreImagen';
 function AutoContador() {
     const [counter, setCounter] = useState(0);
     const [estado, setEstado] = useState(false);
@@ -58,6 +59,8 @@ function AutoContador() {
     return (
         <div>
             <h1>Counter: {counter}</h1>
+            <IndiceImagen counter={counter}/>
+            <br/>
             <button onClick={handleClickContar} hidden >Contar</button>
             <button onClick={handleClickDetener} hidden >Pausar</button>
             <button onClick={handleClickReiniciar}>Resetear</button>

@@ -1,3 +1,10 @@
+/* ******************************************
+*Componente que Muestra un mensaje despues
+* de que pasa un tiempo desde que se hace 
+* click. Se utiliza varios hooks y setTimeOut
+*********************************************/
+
+
 import { useState, useEffect, useRef } from 'react';
 // import './App.css'
 
@@ -11,7 +18,7 @@ const Warning = () => {
             //Creating a timeout
             timerId.current = setTimeout(() => {
                 setShowWarning(false);
-                
+
 
 
             }, 5000);
@@ -26,10 +33,10 @@ const Warning = () => {
     function handleClick() {
         setShowWarning(true);
     }
-    function handleClickParar(){
+    function handleClickParar() {
         setShowWarning(false);
     }
-console.log(showWarning)
+    console.log(showWarning)
     return (
         <div className='warn'>
             {showWarning && <div className='warningMsg'>
