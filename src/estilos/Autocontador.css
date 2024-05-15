@@ -1,0 +1,13 @@
+.autocontador{
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin:5px;
+padding: 5px;
+background-color: bisque;
+border-radius:5px ;
+border-color: black;
+border-width: 5px;
+border-style:groove;
+}
