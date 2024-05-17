@@ -4,9 +4,9 @@
 * de la pagina principal de la aplicacion
 ******************************************/
 import '../estilos/Cabecera.css'
-const Cabecera = ({ bote, NumApuestas  }) => {
+const Cabecera = ({ bote, NumApuestas }) => {
     const valorUnitarioApuestas = 2
-    NumApuestas= bote/valorUnitarioApuestas
+    NumApuestas = bote / valorUnitarioApuestas
 
     return (
         <section className="cabecera">
@@ -14,13 +14,13 @@ const Cabecera = ({ bote, NumApuestas  }) => {
             <input type="number" placeholder="Cantidad en el Bote" value={bote} defaultValue={0} readOnly />Euros
             <hr />
             <label>Número de Tiradas desde Ultima Recarga del Bote:</label>
-            <input type="number" placeholder="Cantidad en el Bote" value={NumApuestas} defaultValue={0} readOnly />
-         
-            <hr/>
+            <input type="number" placeholder="Cantidad en el Bote" value={NumApuestas} readOnly />
+
+            <hr />
             <label>€uro por Tirada: {valorUnitarioApuestas} </label>
-            <hr/>
+            <hr />
             <label>Bote Actual</label>
-            <hr/>
+            <hr />
             <label>Tiradas Restantes</label>
         </section>
     )

@@ -1,6 +1,6 @@
 import React from 'react';
 import './estilos/App.css';
-import BotoneraForm from './Componentes/BotoneraCentro'
+import BotoneraForm from './Componentes/BotoneraForm'
 //Comienza la funcion principal de entrada a la aplicación
 function App(props) {
 
