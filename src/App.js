@@ -1,15 +1,10 @@
 import React from 'react';
 import './estilos/App.css';
-import BotoneraForm from './Componentes/BotoneraForm'
-//Comienza la funcion principal de entrada a la aplicación
-function App(props) {
+import ZonaCero from './Componentes/ZonaCero';
+function App(){
 
-  return (
-    <>         
-      <section className='contadores'>
-       <BotoneraForm />
-      </section>
-    </>
+  return (  
+        <ZonaCero/>
   );
 }
 

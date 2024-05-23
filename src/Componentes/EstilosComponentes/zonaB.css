@@ -1,0 +1,9 @@
+.zonaB-div{
+    background-color: rgb(225, 225, 24);
+    height: 200px;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }

@@ -16,10 +16,10 @@ const FormularioApuesta = ({ setBote, setNumApuestas }) => {
 
     return (
         <form className="formulario-Apstar" method="post" onSubmit={handleSubmit}>
-            <label>
+            <label htmlFor='cantidadBote'>
                 Cantidad Cargada:
             </label>
-            <input className="furmulario-apostar-input" name="apuesta" defaultValue={0} />
+            <input id="cantidadBote" className="furmulario-apostar-input" name="apuesta" defaultValue={0} />
             <button type="submit">Cargar Bote</button>
         </form>
     );

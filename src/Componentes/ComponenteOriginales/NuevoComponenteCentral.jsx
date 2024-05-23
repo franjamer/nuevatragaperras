@@ -1,23 +1,31 @@
-import { useState } from "react";
+import { useState, useCallback } from "react";
 import Cabecera from "./Cabecera";
 import AutoContador from "./AutoContador";
-import FormularioApuesta from "./FormularioApuestas";
+import FormularioApuesta from "./FormularioApuesta";
 import BotonActivarAutoContadores from "./BotonActivarAutoContadores";
-import '../estilos/BotoneraCentro.css'
+import UltimasImagenes from "./UltimasImagenes";
+import '../estilos/BotoneraCentro.css';
 
-const BotoneraForm = ({ setCounterAutoContador }) => {
-  const [bote, setBote] = useState(0)
-  const [numApuestas, setNumApuestas] = useState(0)
-  const [autoContadoresActivos, setAutoContadoresActivos] = useState(false); // Estado para controlar la activación de todos los AutoContador  
-  const [contadores, setContadores] = useState([0, 0, 0]); // Estado para los contadores
-  // Función para activar todos los AutoContador simultáneamente
+const NuevoComponenteCentral = ({ setCounterAutoContador }) => {
+
+  const [autoContadoresActivos, setAutoContadoresActivos] = useState(false);
+  const [contadores, setContadores] = useState([0, 0, 0]);
+  const [ultimasImagenes, setUltimasImagenes] = useState([]);
+
   const toggleActivarAutoContadores = () => {
-    setAutoContadoresActivos(true)  
+    setAutoContadoresActivos(true);
   };
+
   const resetearContadores = () => {
-    setContadores([0, 0, 0]); // Resetear todos los contadores a cero
+    setContadores([0, 0, 0]);
+    setAutoContadoresActivos(false);
+    setUltimasImagenes([]);
   };
- 
+
+  const handleSetUltimaImagen = useCallback((imagen) => {
+    setUltimasImagenes((prevImagenes) => [...prevImagenes, imagen]);
+  }, []);
+
   return (
     <section className="contadores">
       <header>
@@ -28,7 +36,6 @@ const BotoneraForm = ({ setCounterAutoContador }) => {
         {contadores.map((contador, index) => (
           <AutoContador
             key={index}
-            className="imagenes-autocontador"
             estadoAutoContador={autoContadoresActivos}
             contador={contador}
             setContador={(nuevoValor) => {
@@ -36,17 +43,17 @@ const BotoneraForm = ({ setCounterAutoContador }) => {
               nuevosContadores[index] = nuevoValor;
               setContadores(nuevosContadores);
             }}
+            setUltimaImagen={handleSetUltimaImagen}
           />
         ))}
       </div>
-     
       <FormularioApuesta setBote={setBote} setNumApuestas={setNumApuestas} />
       <BotonActivarAutoContadores
         toggleActivarAutoContadores={toggleActivarAutoContadores}
         resetearContadores={resetearContadores}
       />
-     
+      <UltimasImagenes imagenes={ultimasImagenes} />
     </section>
   );
-}
-export default BotoneraForm;
+};
+export default NuevoComponenteCentral

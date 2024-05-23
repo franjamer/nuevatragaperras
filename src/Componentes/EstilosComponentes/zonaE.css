@@ -1,0 +1,22 @@
+.grupoImagenes{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: aquamarine;
+
+}
+.contenedorGrupos{
+    display: flex;
+    flex-direction: row;
+    background-color: chocolate;
+    padding: 5px;
+}
+.h3-contenedor-Grupos{
+    background-color: burlywood;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+
+}
