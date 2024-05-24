@@ -25,6 +25,9 @@ const ZonaC = () => {
                         {/* <ZonaE iniciarSecuencia={iniciar}/>   
                         <ZonaE iniciarSecuencia={iniciar}/>   */}
                         <ZonaESecuenciaAleatoriaDeImagenes iniciarSecuencia={iniciarSecuencia}/> 
+                        <ZonaESecuenciaAleatoriaDeImagenes iniciarSecuencia={iniciarSecuencia}/> 
+                        <ZonaESecuenciaAleatoriaDeImagenes iniciarSecuencia={iniciarSecuencia}/> 
+
                         <button onClick={iniciarSecuenciaEnZonaE} disabled={iniciarSecuencia}>Iniciar Secuencia</button>
                     </div>
                 

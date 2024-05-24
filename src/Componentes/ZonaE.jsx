@@ -65,7 +65,7 @@ const ZonaESecuenciaAleatoriaDeImagenes = ({ iniciarSecuencia }) => {
                 width={200}
                 height={200}
             />
-            <button onClick={iniciarSecuenciaInternamente} disabled={intervaloActivo}>Iniciar Secuencia</button>
+            {/* <button onClick={iniciarSecuenciaInternamente} disabled={intervaloActivo}>Iniciar Secuencia</button> */}
             {intervaloActivo && <p>Intervalo activo</p>}
             <ImagenesLista imagenes={imagenes} />
         </div>
